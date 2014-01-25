@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+   
+    <item
+        android:id="@+id/action_settings"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/menu"
+        android:title="@string/action_settings" >
+        
+        <menu            
+            >
+            <!-- 
+            <item 
+		        android:showAsAction="ifRoom"
+		        android:icon="@drawable/vivoon"
+		        android:title="@string/items"
+                />
+            <item 
+		        android:showAsAction="ifRoom"
+		        android:icon="@drawable/vivoon"
+		        android:title="@string/items"
+                />
+            <item 
+		        android:showAsAction="ifRoom"
+		        android:icon="@drawable/vivoon"
+		        android:title="@string/items"
+                />
+            
+            <item 
+		        android:showAsAction="ifRoom"
+		        android:icon="@drawable/vivoon"
+		        android:title="@string/items"
+                />
+            
+             -->
+        </menu>
+        
+    </item>
+         
+            
+
+</menu>

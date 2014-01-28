@@ -20,7 +20,7 @@ public class LauncherActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_launcher);
 		
-		capaLauncher = (LinearLayout)				
+		capaLauncher = (LinearLayout)
 				findViewById(R.id.capaLauncher);
 		
 		//Declaracion en tiempo de ejecución
@@ -28,10 +28,7 @@ public class LauncherActivity extends Activity {
 		LinearLayout capaTemporal = 
 				new LinearLayout(getApplicationContext());
 		*/
-		
-		
-			
-		capaLauncher.postDelayed( cargaApp , TIEMPO );		
+				
 		
 	}//fin del onCreate()
 	
@@ -42,7 +39,7 @@ public class LauncherActivity extends Activity {
 			
 			Log.i(TAG, "contador: " + contador );
 			
-			if (contador < 5) {
+			if (contador < 3) {
 				capaLauncher.postDelayed( cargaApp , 1000 );
 				contador++;
 			}else{
@@ -56,12 +53,32 @@ public class LauncherActivity extends Activity {
 	private void IniciaApp(){
 		
 		Intent intent =  new Intent( this, MainActivity.class );
-		startActivity(intent);
+		startActivity(intent);		
 		
-		
+		overridePendingTransition( 
+				R.anim.slide_left,
+				R.anim.slide_right );
 		
 	}
 	
+	@Override
+	protected void onResume() {
+		// TODO Auto-generated method stub
+		super.onResume();
+		
+		contador = 0;
+		capaLauncher.postDelayed( cargaApp , TIEMPO );
+		
+	}
+	
+	
+	@Override
+	protected void onDestroy() {
+		// TODO Auto-generated method stub
+		super.onDestroy();		
+		capaLauncher.removeCallbacks(cargaApp);
+		
+	}
 	
 	
 	

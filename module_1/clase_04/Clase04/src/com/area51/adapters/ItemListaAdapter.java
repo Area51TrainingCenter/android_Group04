@@ -22,25 +22,30 @@ public class ItemListaAdapter extends BaseAdapter {
 
 	@Override
 	public int getCount() {
-		// TODO Auto-generated method stub
-		return 0;
+		
+		return items.size();
 	}
 
 	@Override
 	public Object getItem(int position) {
 		
-		return null;
+		return items.get(position);
 	}
 
 	@Override
 	public long getItemId(int position) {
-		// TODO Auto-generated method stub
-		return 0;
+		
+		return items.get(position).getIdItem();
+		
 	}
 
 	@Override
-	public View getView(int position, View convertView, ViewGroup parent) {
-		// TODO Auto-generated method stub
+	public View getView(int position, View vistaItem, ViewGroup parent) {
+		
+		
+		
+		
+		
 		return null;
 	}
 

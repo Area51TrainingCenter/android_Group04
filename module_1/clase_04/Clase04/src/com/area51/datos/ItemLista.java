@@ -6,6 +6,9 @@ public class ItemLista {
 	protected String nombreItem;
 	
 	
+	
+	
+	
 	public ItemLista(int idItem, String nombreItem) {
 		this.idItem = idItem;
 		this.nombreItem = nombreItem;

@@ -3,12 +3,17 @@ package com.area51.adapters;
 
 import java.util.ArrayList;
 
+import com.area51.clase04.R;
 import com.area51.datos.ItemLista;
 
+
 import android.app.Activity;
+import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.TextView;
 
 public class ItemListaAdapter extends BaseAdapter {
 	
@@ -42,11 +47,30 @@ public class ItemListaAdapter extends BaseAdapter {
 	@Override
 	public View getView(int position, View vistaItem, ViewGroup parent) {
 		
+		if ( vistaItem == null ) {
+			//llenamos la vista con el recurso de diseño item_list.xml
+			
+			LayoutInflater inflater = 
+					(LayoutInflater)actividadActual
+					.getSystemService( Context.LAYOUT_INFLATER_SERVICE );
+			
+			vistaItem = inflater.inflate( R.layout.item_list , null);
+			
+		}
+		
+		ItemLista itemActual = items.get(position);
+		
+		//procesos de los componentes de diseño ( Textview, Imageview, etc)
+		
+		TextView nombreItem = (TextView)vistaItem
+				.findViewById(R.id.nombreItem);
+		
+		nombreItem.setText( itemActual.getNombreItem() );
 		
 		
 		
 		
-		return null;
+		return vistaItem;
 	}
 
 	public ItemListaAdapter(Activity actividadActual, ArrayList<ItemLista> items) {

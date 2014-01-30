@@ -4,15 +4,38 @@ public class ItemLista {
 
 	protected int idItem;
 	protected String nombreItem;
+	protected String rutaImagenItem;
+	protected String descripcionItem;
 	
 	
 	
 	
 	
-	public ItemLista(int idItem, String nombreItem) {
-		this.idItem = idItem;
-		this.nombreItem = nombreItem;
+	/**
+	 * @return the rutaImagenItem
+	 */
+	public String getRutaImagenItem() {
+		return rutaImagenItem;
 	}
+	/**
+	 * @param rutaImagenItem the rutaImagenItem to set
+	 */
+	public void setRutaImagenItem(String rutaImagenItem) {
+		this.rutaImagenItem = rutaImagenItem;
+	}
+	/**
+	 * @return the descripcionItem
+	 */
+	public String getDescripcionItem() {
+		return descripcionItem;
+	}
+	/**
+	 * @param descripcionItem the descripcionItem to set
+	 */
+	public void setDescripcionItem(String descripcionItem) {
+		this.descripcionItem = descripcionItem;
+	}
+	
 	/**
 	 * @return the idItem
 	 */
@@ -36,6 +59,15 @@ public class ItemLista {
 	 */
 	public void setNombreItem(String nombreItem) {
 		this.nombreItem = nombreItem;
+	}
+	
+	
+	public ItemLista(int idItem, String nombreItem, String rutaImagenItem,
+			String descripcionItem) {
+		this.idItem = idItem;
+		this.nombreItem = nombreItem;
+		this.rutaImagenItem = rutaImagenItem;
+		this.descripcionItem = descripcionItem;
 	}
 	
 	

@@ -8,8 +8,6 @@ import com.area51.datos.ItemLista;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
-import android.widget.BaseAdapter;
-import android.widget.ListAdapter;
 import android.widget.ListView;
 
 public class MainActivity extends Activity {
@@ -27,6 +25,7 @@ public class MainActivity extends Activity {
 				ItemListaAdapter(this, itemsObtenidos);
 		lista.setAdapter(adapter);
 
+		
 				
 				
 				
@@ -38,7 +37,10 @@ public class MainActivity extends Activity {
 		
 		for (int i = 0; i < 10; i++) {
 			
-			items.add( new ItemLista( i , "Item " + i ));
+			items.add( new ItemLista( i ,
+					"Item " + i , 
+					"drawable/avatar", 
+					"Este elemeto es: Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."  ));
 			
 		}		
 		

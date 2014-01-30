@@ -9,6 +9,7 @@ import com.area51.datos.ItemLista;
 
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -67,6 +68,11 @@ public class ItemListaAdapter extends BaseAdapter {
 		
 		nombreItem.setText( itemActual.getNombreItem() );
 		
+		Typeface tipoFuente = Typeface.createFromAsset(
+				actividadActual.getAssets() , "fonts/OpenSans-LightItalic.ttf" );
+		
+		nombreItem.setTypeface( tipoFuente );
+		//Tarea: buscar como se asigna un tipo de fuente de lentra a un Textview por diseño;
 		
 		
 		

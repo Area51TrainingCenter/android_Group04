@@ -29,6 +29,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingBottom="@dimen/padding_botton_textview"
+        		android:textAppearance="?android:attr/textAppearanceLarge"
                  />
             
             <TextView
@@ -43,10 +44,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingBottom="@dimen/padding_botton_textview"
+        		android:textAppearance="?android:attr/textAppearanceSmall"
                  />
             
         </LinearLayout>
         
     </LinearLayout>
+
 
 </LinearLayout>

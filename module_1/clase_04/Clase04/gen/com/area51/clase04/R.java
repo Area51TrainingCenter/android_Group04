@@ -38,15 +38,19 @@ public final class R {
         public static final int update=0x7f02000d;
     }
     public static final class id {
-        public static final int action_settings=0x7f080004;
+        public static final int action_settings=0x7f080007;
+        public static final int apellido=0x7f080005;
+        public static final int button1=0x7f080006;
+        public static final int capalayout=0x7f080000;
         public static final int descripcionItem=0x7f080003;
         public static final int imagenItem=0x7f080001;
-        public static final int lista=0x7f080000;
+        public static final int nombre=0x7f080004;
         public static final int nombreItem=0x7f080002;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int item_list=0x7f030001;
+        public static final int practica=0x7f030002;
     }
     public static final class menu {
         public static final int main=0x7f070000;

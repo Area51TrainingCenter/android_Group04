@@ -14,6 +14,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class ItemListaAdapter extends BaseAdapter {
@@ -73,6 +74,27 @@ public class ItemListaAdapter extends BaseAdapter {
 		
 		nombreItem.setTypeface( tipoFuente );
 		//Tarea: buscar como se asigna un tipo de fuente de lentra a un Textview por diseño;
+		
+		//Asignamos el texto de descripción
+		TextView descripcionItem = (TextView)vistaItem
+				.findViewById(R.id.descripcionItem);
+		descripcionItem.setText( itemActual.getDescripcionItem() );
+		
+		
+		//Llamamos a la imagen
+		ImageView rutaImagenItem = (ImageView)vistaItem.findViewById(R.id.imagenItem);
+		
+		int imageResource = actividadActual.
+				getResources().
+				getIdentifier(
+						itemActual.getRutaImagenItem(),
+						null,
+						actividadActual.getPackageName());
+		
+		rutaImagenItem.setImageDrawable( 
+				actividadActual
+				.getResources()
+				.getDrawable(imageResource) );
 		
 		
 		

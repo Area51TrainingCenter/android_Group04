@@ -8,23 +8,67 @@ import com.area51.datos.ItemLista;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.view.ViewGroup.LayoutParams;
+import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
+	
+	ArrayList<ItemLista>items;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
-		ListView lista = (ListView)findViewById(R.id.lista);		
-
-		ArrayList<ItemLista> itemsObtenidos = ObtenerItem();
+		//ListView lista = (ListView)findViewById(R.id.lista);		
 		
+		
+		LinearLayout capalayout = (LinearLayout)findViewById(R.id.capalayout);
+		
+		
+		
+		
+		
+		ArrayList<ItemLista> itemsObtenidos = ObtenerItem();
+		/*
 		ItemListaAdapter adapter = new 
 				ItemListaAdapter(this, itemsObtenidos);
 		lista.setAdapter(adapter);
-
+		 */
+		
+		//Toast.makeText(this, "cantidad " + itemsObtenidos.size(), Toast.LENGTH_SHORT).show();
+		
+		for (int i = 0; i < itemsObtenidos.size(); i++) {
+			
+			
+			/*
+			LinearLayout capalayoutItem = new LinearLayout(this);
+			capalayoutItem.setLayoutParams( 
+					new LayoutParams( 
+							LayoutParams.MATCH_PARENT , 
+							LayoutParams.MATCH_PARENT ));
+			capalayoutItem.setOrientation( LinearLayout.HORIZONTAL  );
+			
+			*/
+			
+			TextView nombre = new TextView(this);
+			nombre.setLayoutParams( 
+					new LayoutParams( 
+							LayoutParams.MATCH_PARENT , 
+							LayoutParams.WRAP_CONTENT ));
+			
+			nombre.setText( items.get(i).getNombreItem() );
+			
+			//Toast.makeText(this, "texto: " + items.get(i).getNombreItem(), Toast.LENGTH_SHORT).show();
+			
+			capalayout.addView(nombre);
+			
+			
+		}
 		
 				
 				
@@ -33,7 +77,7 @@ public class MainActivity extends Activity {
 	
 	private ArrayList <ItemLista> ObtenerItem(){
 		
-		ArrayList<ItemLista>items = new ArrayList<ItemLista>();
+		items = new ArrayList<ItemLista>();
 		
 		for (int i = 0; i < 10; i++) {
 			

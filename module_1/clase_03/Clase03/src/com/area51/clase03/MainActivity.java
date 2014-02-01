@@ -1,8 +1,15 @@
 package com.area51.clase03;
 
+import java.util.ArrayList;
+
+import com.area51.adapters.ItemListaAdapter;
+import com.area51.datos.ItemLista;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.res.Configuration;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -16,6 +23,9 @@ public class MainActivity extends Activity {
 	ListView mDrawerList;
 	ActionBarDrawerToggle mDrawerToggle;
 		
+
+	ArrayList<ItemLista>items;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -25,14 +35,18 @@ public class MainActivity extends Activity {
 		mDrawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
 		mDrawerList = (ListView)findViewById(R.id.left_drawer);
 		
-		mDrawerLayout.setDrawerShadow( R.drawable.drawer_shadow, GravityCompat.START);
-		
+		mDrawerLayout.setDrawerShadow( 
+				R.drawable.drawer_shadow, 
+				GravityCompat.START);		
 				
 		getActionBar().setTitle( R.string.nameDisplay );
 		getActionBar().setDisplayUseLogoEnabled(false);
 				
 		getActionBar().setIcon(R.drawable.logo);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		
+		
+		getActionBar().setBackgroundDrawable( new ColorDrawable( Color.parseColor("#F7F7F7") ));
 		
 		
 		mDrawerToggle = new ActionBarDrawerToggle(
@@ -45,7 +59,32 @@ public class MainActivity extends Activity {
 		mDrawerLayout.setDrawerListener(mDrawerToggle);
 		
 		
+
+		
+		
+		ArrayList<ItemLista> itemsObtenidos = ObtenerItem();
+		
+		ItemListaAdapter adapter = new 
+				ItemListaAdapter(this, itemsObtenidos);
+		mDrawerList.setAdapter(adapter);
+		
+		
 	}
+	
+
+	private ArrayList <ItemLista> ObtenerItem(){
+		
+		items = new ArrayList<ItemLista>();
+
+		items.add( new ItemLista( 1 , "NEWS"  , "drawable/icon1", ""  ));
+		items.add( new ItemLista( 2 , "SECTION"  , "drawable/icon2", ""  ));
+		items.add( new ItemLista( 3 , "MEDIA"  , "drawable/icon3", ""  ));
+			
+		
+		return items;
+		
+	}
+	
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {

@@ -5,6 +5,9 @@
     android:orientation="vertical"
     tools:context=".MainActivity" >
     
+    
+    
+    <!-- 
     <LinearLayout
         android:id="@+id/capalayout"
         android:layout_width="match_parent"
@@ -15,15 +18,14 @@
         
         
     </LinearLayout>
-    
-    
-    <!-- 
+     -->
+     
     <ListView
         android:id="@+id/lista"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
          />
-    -->
+
     
     <!-- 
 	    <LinearLayout />

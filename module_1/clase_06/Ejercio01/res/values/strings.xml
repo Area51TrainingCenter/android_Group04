@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ejercio01</string>
+    <string name="action_settings">Settings</string>
+
+    
+    
+    <string name="textoNombre">Ingrese un Nombre</string>
+    <string name="textoApellido">Ingrese un Apellido</string>
+    <string name="textoBoton">Grabar :D </string>
+    
+    
+    
+</resources>

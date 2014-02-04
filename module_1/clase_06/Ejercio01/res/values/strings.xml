@@ -10,6 +10,7 @@
     <string name="textoApellido">Ingrese un Apellido</string>
     <string name="textoBoton">Grabar :D </string>
     
+    <string name="textoError">Ingrese un nombre y un Apellido!!!</string>
     
     
 </resources>

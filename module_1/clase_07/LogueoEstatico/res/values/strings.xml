@@ -5,6 +5,11 @@
     <string name="action_settings">Settings</string>
         
     <string name="textoUsuario">Ingrese un Usuario</string>
+    <string name="textoClave">Ingrese su Clave</string>
     <string name="textoBoton">Ingresar</string>
+    
+    <string name="textoError">Los datos ingresados no son válidos.</string>
+    
+    
 
 </resources>

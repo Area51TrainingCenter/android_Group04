@@ -3,12 +3,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="5dp"
     tools:context=".MainActivity" >
 
     <EditText
         android:id="@+id/txtUsuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="@string/textoUsuario"
+        android:layout_marginBottom="10dp"
         android:ems="10" >
         
         <requestFocus />
@@ -19,16 +22,44 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="@string/textoClave"
         android:inputType="textPassword" >
 
     </EditText>
     
-
-    <Button
-        android:id="@+id/btnIngreso"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="" />
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="15dp" >
+	        
+	    <Button
+	        android:id="@+id/btnIngreso"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/textoBoton" />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="15dp" >
+	    
+	    <TextView
+	        android:id="@+id/textoError"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/textoError"
+	        android:visibility="gone"
+	        android:textColor="#FF0000"
+	         />
+	    
+    </LinearLayout>
+    
 
 
 </LinearLayout>

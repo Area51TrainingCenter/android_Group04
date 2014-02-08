@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="1dp"
+    tools:context=".MainActivity" >
+
+    <GridView
+        android:id="@+id/matriz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnWidth="85dp"
+        android:verticalSpacing="0dp"
+        android:horizontalSpacing="0dp"
+        android:stretchMode="columnWidth"
+        android:numColumns="auto_fit" >
+    </GridView>
+
+</LinearLayout>

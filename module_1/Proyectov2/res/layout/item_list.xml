@@ -17,13 +17,14 @@
         <ImageView
             android:id="@+id/imagenItem"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"            
+            android:layout_height="wrap_content" 
+            android:padding="3dp"           
              />
         
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="5dp"
+            android:paddingLeft="2dp"
             android:orientation="vertical" >
             
             <TextView
@@ -33,20 +34,6 @@
                 android:paddingBottom="@dimen/padding_botton_textview"
         		android:textAppearance="?android:attr/textAppearanceLarge"
         		android:textColor="#FFFFFF"
-                 />
-            
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="fill_parent"
-                android:paddingBottom="@dimen/padding_botton_textview"
-                 />
-            
-            <TextView
-                android:id="@+id/descripcionItem"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingBottom="@dimen/padding_botton_textview"
-        		android:textAppearance="?android:attr/textAppearanceSmall"
                  />
             
         </LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Clase10</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="textoNombreAlumno">Ingrese un Nombre</string>
+    <string name="textoEdadAlumno">Ingrese la Edad</string>
+    <string name="textoBtnIngresaAlumno">Ingresar Alumno</string>
+    <string name="textoBtnActualizaAlumno">Actualizar Alumno</string>
+    <string name="textoBtnCancelarAlumno">Cancelar</string>
+    
+    <string name="textoBtnEditaAlumno">Editar Alumno</string>
+    <string name="textoBtnEliminaAlumno">Eliminar Alumno</string>
+    
+    
+</resources>

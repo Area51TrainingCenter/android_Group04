@@ -1,0 +1,88 @@
+<LinearLayout 
+    android:id="@+id/capaMain"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+	
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical" >
+        
+        <EditText
+            android:id="@+id/nombreAlumno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/textoNombreAlumno"
+            android:inputType="textCapWords"
+            android:layout_marginBottom="10dp"
+             />
+
+        <EditText
+            android:id="@+id/edadAlumno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/textoEdadAlumno"
+            android:inputType="number" >
+
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+             >
+
+            <Button
+                android:id="@+id/btnIngresaAlumno"
+            	style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textoBtnIngresaAlumno" />
+            
+            
+            <LinearLayout
+                android:id="@+id/capaEdicion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"   >
+	                
+	            <Button
+	                android:id="@+id/btnActualizaAlumno"
+            		style="?android:attr/buttonStyleSmall"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/textoBtnActualizaAlumno"
+	                 />
+	            
+	            
+	            <Button
+	                android:id="@+id/btnCancelarAlumno"
+            		style="?android:attr/buttonStyleSmall"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/textoBtnCancelarAlumno"
+	                 />
+                
+            </LinearLayout>
+            
+            
+
+        </LinearLayout>
+        
+    </LinearLayout>
+   
+    <ListView
+        android:id="@+id/lista"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"  />
+     
+
+</LinearLayout>

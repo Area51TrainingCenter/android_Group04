@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical" >   
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+         >
+        	        
+	    <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/avatar"
+	        android:layout_marginRight="3dp"
+	         /> 
+	     
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	         >
+	        
+		    <TextView
+		        android:id="@+id/textoNombre"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginBottom="4dp"  />
+		    
+		    <TextView
+		        android:id="@+id/textoEdad"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginBottom="4dp"  />
+		    
+		    <TextView
+		        android:id="@+id/textoId"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"  />
+	        
+	        
+	    </LinearLayout>
+	    
+	    
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/capaOpcion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/opcion"
+        android:layout_marginTop="-50dp"
+        android:layout_marginLeft="50dp"
+        android:visibility="gone"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/btnEditaAlumno"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textoBtnEditaAlumno" />
+
+        <Button
+            android:id="@+id/btnEliminaAlumno"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/btnEditaAlumno"
+            android:text="@string/textoBtnEliminaAlumno" />
+    </RelativeLayout>
+
+</LinearLayout>

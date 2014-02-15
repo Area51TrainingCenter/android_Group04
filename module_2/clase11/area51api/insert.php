@@ -17,7 +17,7 @@
 
 
 	//$alumnos = array( "key" => "valor" );
-	$alumnos = array( "segu19@gmail.com",
+	$alumnos = array( "correo@gmail.com",
 					  "correo@gmail.com",
 					  "correo@gmail.com",
 					  "correo@gmail.com",

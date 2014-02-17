@@ -1,0 +1,6 @@
+C:\DATA\adt-bundle-windows-x86_64-20131030\sdk\platform-tools
+
+adb devices
+adb -s HT36JW918823 shell
+
+run-as com.area51.clase09 ls -l /data/data/com.area51.clase09/databases/

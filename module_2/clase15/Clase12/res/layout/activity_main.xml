@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         >
+	        
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+	        
+	        <Button
+	            android:id="@+id/btnLogueo"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="10dp"
+	            android:text="@string/btnLogueoTexto"            
+	             />        
+	        <Button
+	            android:id="@+id/btnVotacion"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="10dp"
+	            android:text="@string/btnVotacionTexto"            
+	             />
+	        <Button
+	            android:id="@+id/btnResultado"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/btnResultadoTexto"            
+	             />
+	        
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:id="@+id/lineaRed"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/trans"
+	        android:gravity="center"
+	        android:visibility="gone"
+	         >
+	        
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/mensajeRed"	            
+	             />
+	        
+	    </LinearLayout>
+	    
+	    <LinearLayout
+        	android:id="@+id/capaFrame"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="bottom|center_horizontal"
+	        android:orientation="horizontal"
+	        android:paddingBottom="15dp"
+	         />	    
+
+    </FrameLayout>
+
+
+</LinearLayout>

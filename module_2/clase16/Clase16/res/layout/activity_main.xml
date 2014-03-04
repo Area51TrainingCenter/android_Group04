@@ -1,0 +1,56 @@
+<FrameLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frameVideo"
+    tools:context=".MainActivity" >
+    
+    <VideoView
+        android:id="@+id/video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+	    
+        <TextView
+            android:id="@+id/nombreVideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        	android:background="@drawable/trans"
+        	android:layout_gravity="top"
+        	android:padding="10dp"
+            android:textColor="#FFF"
+             />
+    
+    <LinearLayout
+        android:id="@+id/barraInferior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/trans"
+        android:padding="10dp"
+         >
+         
+        <ImageView
+            android:id="@+id/btnPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:src="@drawable/play" />
+
+        <ImageView
+            android:id="@+id/btnPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pause" />
+
+        <ImageView
+            android:id="@+id/btnStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:src="@drawable/stop" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

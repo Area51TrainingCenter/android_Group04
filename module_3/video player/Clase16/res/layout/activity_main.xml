@@ -1,0 +1,130 @@
+<FrameLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frameVideo"
+    tools:context=".MainActivity" >
+    <!-- 
+    <VideoView
+        android:id="@+id/video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+	     -->
+	     
+	     <SurfaceView
+        	 android:id="@+id/video"
+	         android:layout_width="match_parent"
+	         android:layout_height="match_parent"
+	         
+	          />
+	     
+        <TextView
+            android:id="@+id/nombreVideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        	android:background="@drawable/trans"
+        	android:layout_gravity="top"
+        	android:padding="10dp"
+            android:textColor="#FFF"
+            android:text="@string/video_name"
+             />
+        
+        
+        
+        
+        
+    
+    <LinearLayout
+        android:id="@+id/barraInferior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/trans"
+        android:padding="10dp"
+        android:orientation="vertical"
+         >
+        
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+	        
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                 >
+	                
+		        <ImageView
+		            android:id="@+id/btnPlay"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:visibility="gone"
+		            android:src="@drawable/play" />
+		
+		        <ImageView
+		            android:id="@+id/btnPause"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:src="@drawable/pause" />
+		
+		        <ImageView
+		            android:id="@+id/btnStop"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:visibility="gone"
+		            android:src="@drawable/stop" />            
+	            
+                
+            </LinearLayout>
+            
+            
+                <SeekBar
+                    android:id="@+id/seekProgreso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="false"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:progressDrawable="@drawable/progresbar"
+                    android:thumb="@drawable/bolitaplayer" />            
+            
+        </LinearLayout>
+         
+	        
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+                android:layout_gravity="right"
+				android:layout_marginRight="20dp"
+				android:orientation="horizontal"	            
+	             >
+	             
+                <TextView
+                    android:id="@+id/tiempoVideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/time_player" 
+        			android:textAppearance="?android:attr/textAppearanceSmall"
+					android:textColor="#FFF" />
+                
+                <TextView
+                    android:id="@+id/tiempoVideoTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+					android:textColor="#FFF"
+        			android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/time_playertotal" />
+	            
+	            
+	        </LinearLayout>
+                
+                
+
+        
+
+    </LinearLayout>
+
+
+</FrameLayout>

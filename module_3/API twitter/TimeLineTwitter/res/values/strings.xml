@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TimeLineTwitter</string>
+    
+	
+    <string name="tweets_cargando">Descargando tweets</string>
+    <string name="tweets_vacio">No se encontraron tweets.</string>
+    <string name="tweets_descargando">Tweets descargados exitosamente.</string>
+    
+    <string name="name_text">name</string>
+    <string name="screen_name_text">screen_name</string>
+    <string name="text_text">text</string>
+    <string name="created_at_text">created_at</string>
+    
+    
+
+</resources>

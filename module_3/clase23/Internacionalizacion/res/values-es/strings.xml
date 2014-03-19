@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="idioma_a">"Japonés"</string>
+    <string name="idioma_b">"Español"</string>
+    <string name="idioma_c">"Francés"</string>
+    <string name="texto">"Texto español"</string>
+    
+
+</resources>

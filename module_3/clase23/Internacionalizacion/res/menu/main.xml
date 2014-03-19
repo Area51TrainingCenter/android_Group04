@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.area51.internacionalizacion.MainActivity" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:showAsAction="always">
+        
+        <menu >
+            
+            <item
+		        android:id="@+id/idioma_a"
+		        android:showAsAction="always"
+		        android:title="@string/idioma_a" />
+            <item
+		        android:id="@+id/idioma_b"
+		        android:showAsAction="always"
+		        android:title="@string/idioma_b" />
+            <item
+		        android:id="@+id/idioma_c"
+		        android:showAsAction="always"
+		        android:title="@string/idioma_c" />
+            
+        </menu>
+        
+        
+        </item>
+
+</menu>

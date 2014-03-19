@@ -1,0 +1,44 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.area51.pruebalocation.MainActivity" >
+
+    <item
+        android:showAsAction="always"
+        android:title="@string/mapa_text" >
+    
+        <menu >
+            <item
+                android:id="@+id/a"
+		        android:showAsAction="always"
+		        android:title="@string/map_a"
+                
+                 />
+            
+            <item
+                android:id="@+id/b"
+		        android:showAsAction="always"
+		        android:title="@string/map_b"
+                
+                 />
+            
+            <item
+                android:id="@+id/c"
+		        android:showAsAction="always"
+		        android:title="@string/map_c"
+                
+                 />
+            
+            <item
+                android:id="@+id/d"
+		        android:showAsAction="always"
+		        android:title="@string/map_d"
+                
+                 />
+            
+            
+        </menu>
+        
+        
+        </item>
+
+</menu>

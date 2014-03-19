@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PruebaLocation</string>
+    <string name="hello_world">Hello world!</string>
+    
+    
+    
+    <string name="mapa_text">Mapa</string>
+    
+    <string name="map_a">Mapa Normal</string>    
+    <string name="map_b">Mapa Hibrido</string>
+    <string name="map_c">Mapa Satélite</string>
+    <string name="map_d">Mapa Terreno</string>
+    
+    <string name="ubicacionI">Ubicación Inicial</string>
+    <string name="ubicacionF">Ubicación Final</string>
+    
+
+</resources>
